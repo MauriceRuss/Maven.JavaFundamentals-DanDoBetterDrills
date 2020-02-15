@@ -71,15 +71,17 @@ public class StringUtilities {
         if(inputValue.length() % 2 ==0){
             charPos = inputValue.length() / 2-1;
             stringLen = 2;
+            return inputValue.charAt((inputValue.length()/2- 1));
         }else{
             charPos= inputValue.length()/ 2;
             stringLen = 1;
+            return inputValue.charAt((inputValue.length()/2));
         }
 
-        String ans = inputValue.substring(charPos, charPos + stringLen);
+       // String ans = inputValue.substring(charPos, charPos - stringLen);
 
 
-        return null;
+        //return inputValue.charAt();
     }
 
     /**
